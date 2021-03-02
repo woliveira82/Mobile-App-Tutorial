@@ -148,8 +148,26 @@ margin_bottom = 209.0
 focus_mode = 0
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0.509804, 0.509804, 0.509804, 1 )
+custom_colors/font_color_hover = Color( 0.509804, 0.509804, 0.509804, 1 )
+custom_colors/font_color_pressed = Color( 0.376471, 0.376471, 0.376471, 1 )
 enabled_focus_mode = 0
 text = "Hard"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="Button" parent="UI/MenuButtons/Difficult/DifficultMenu"]
+margin_top = 213.0
+margin_right = 576.0
+margin_bottom = 280.0
+focus_mode = 0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.509804, 0.509804, 0.509804, 1 )
+custom_colors/font_color_hover = Color( 0.509804, 0.509804, 0.509804, 1 )
+custom_colors/font_color_pressed = Color( 0.376471, 0.376471, 0.376471, 1 )
+enabled_focus_mode = 0
+text = "Back"
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -166,3 +184,4 @@ __meta__ = {
 [node name="Global" type="Node2D" parent="."]
 script = ExtResource( 6 )
 [connection signal="pressed" from="UI/MenuButtons/Start/StartMenu/Start" to="UI/MenuButtons" method="_on_Start_pressed"]
+[connection signal="pressed" from="UI/MenuButtons/Difficult/DifficultMenu/Back" to="UI/MenuButtons" method="_on_Back_pressed"]

@@ -19,3 +19,8 @@ func _ready() -> void:
 func _on_Start_pressed() -> void:
 	get_node("Start").move(Vector2(-576, 400))
 	get_node("Difficult").move(Vector2(0, 400))
+
+
+func _on_Back_pressed() -> void:
+	get_node("Start").move(Vector2(0, 400))
+	get_node("Difficult").move(Vector2(576, 400))
